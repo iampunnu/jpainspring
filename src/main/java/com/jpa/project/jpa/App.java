@@ -24,7 +24,7 @@ public class App
        // PraveenDao dao=new PraveenDaoImpl();
       //  praveenDaoImpl.save(praveen);
         
-        Praveen p=praveenDaoImpl.get(11);
+        Praveen p=praveenDaoImpl.get(1);
         System.out.println(p.getAge());
     }
 }

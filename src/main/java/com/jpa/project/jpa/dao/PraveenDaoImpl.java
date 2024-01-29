@@ -27,8 +27,6 @@ public class PraveenDaoImpl  {
 	@Transactional
     public Praveen get(int id) {
 		
-		 return (Praveen) entityManager.createQuery("FROM praveen u WHERE u.id = :id")
-		          .setParameter("id", id)
-		          .getSingleResult();		
+		 return entityManager.find(Praveen.class,id);		
 	}
 }
